@@ -11,7 +11,6 @@ int main() {
     if (!file) return 0;
 
     int score = 0;
-    char opp_move, your_move;
 
     std::string line;
     while(getline(file, line)) {
