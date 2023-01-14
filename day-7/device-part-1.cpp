@@ -43,7 +43,15 @@ int main() {
                     sizes[current_dir + parsed[2] + "/"] = 0;
                 }
             } else if (parsed[2] == "ls") {
-
+                getline(file, line);
+                while (line[0] != '$') {
+                    if (line.substr(0, 4) != "dir") {
+                        sizes[current_dir] += 
+                    }
+                    if (!getline(file, line)) {
+                        // TODO: PRINT OUTPUT
+                    }
+                }
             } 
         }
 
